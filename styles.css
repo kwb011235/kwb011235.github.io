@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ 
+ body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f7fa;
+  /* Add padding to the top to account for the fixed header */
+  padding-top: 150px; /* Adjust this value based on your header height */
+ }
+ 
+ header {
+  background: linear-gradient(135deg, #1a237e, #0d47a1);
+  color: white;
+  /* Reduced padding for smaller top/bottom margins */
+  padding: 1rem 2rem;
+  text-align: center;
+  /* Make the header fixed */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Add z-index to ensure header stays on top */
+  z-index: 1000;
+  /* Add a subtle shadow for better visibility */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+ }
+ 
+ header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+ }
+ 
+ header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+ }
+ 
+ /* Email link style for header */
+ header a {
+  color: white;
+  text-decoration: underline;
+ }
+ 
+ /* Navigation styles */
+ .nav-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Reduced from 20px */
+ }
+ 
+ .nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+ }
+ 
+ .nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.2s;
+ }
+ 
+ .nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+ }
+ 
+ .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+ }
+ 
+ section {
+  padding: 3rem 0;
+ }
+ 
+ .section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #0d47a1;
+  position: relative;
+ }
+ 
+ .section-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #0d47a1;
+  margin: 0.5rem auto;
+ }
+ 
+ .about-content {
+  display: grid;
+  gap: 2rem;
+ }
+ 
+ @media (min-width: 768px) {
+  .skills-container {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 1.5rem;
+  }
+ }
+ 
+ .profile-summary, .technical-profile, .personal-touch {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+ }
+ 
+ .skill-category {
+  margin-bottom: 1.5rem;
+ }
+ 
+ .skill-category h4 {
+  color: #0d47a1;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+ }
+ 
+ .expertise-list {
+  list-style-position: inside;
+  margin: 1rem 0;
+ }
+ 
+ .expertise-list li {
+  margin-bottom: 0.8rem;
+ }
+ 
+ .project {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+ }
+ 
+ .project h3 {
+  color: #0d47a1;
+  margin-bottom: 0.5rem;
+ }
+ 
+ .project a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #0d47a1;
+  text-decoration: none;
+  font-weight: bold;
+ }
+ 
+ .project a:hover {
+  text-decoration: underline;
+ }
+ 
+ footer {
+  background: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+ }
+ 
+ footer a {
+  color: white;
+  text-decoration: underline;
+ }
+ 
+ #back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #0d47a1;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+ }
+ 
+ #back-to-top:hover {
+  background-color: #1a237e;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+ }
+ 
+ /* Add a media query for responsive design with fixed header */
+ @media (max-width: 768px) {
+  body {
+   padding-top: 180px; /* Adjust for mobile header height */
+  }
+  
+  header {
+   padding: 0.8rem 1rem;
+  }
+  
+  header h1 {
+   font-size: 2rem;
+  }
+  
+  header p {
+   font-size: 1rem;
+  }
+ }
