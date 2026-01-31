@@ -1,159 +1,533 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Kyle Bailey - Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Kyle Bailey - Analytics Specialist & Data Scientist Portfolio. 14+ years of experience in analytics, statistical modeling, and machine learning.">
+    <meta name="keywords" content="Analytics, Data Science, Machine Learning, Statistical Modeling, Python, R, SQL, Portfolio">
+    <meta name="author" content="Kyle Bailey">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kwb011235.github.io/">
+    <meta property="og:title" content="Kyle Bailey - Analytics Specialist & Data Scientist">
+    <meta property="og:description" content="Analytics professional with 14+ years of experience in statistical modeling and machine learning">
+
+    <!-- Twitter Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kwb011235.github.io/">
+    <meta property="twitter:title" content="Kyle Bailey - Analytics Specialist & Data Scientist">
+    <meta property="twitter:description" content="Analytics professional with 14+ years of experience in statistical modeling and machine learning">
+
+    <title>Kyle Bailey - Analytics Specialist & Data Scientist</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-<h1>Kyle Bailey</h1>
-<p>Analytics Specialist / Actuarial Data Scientist / Financial Modeling Expert</p>
-<p><a href="mailto:baileykylew@gmail.com">baileykylew@gmail.com</a></p>
-
-<!-- Revised navigation section -->
-<div class="nav-container">
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Technical Proficiency</a></li>
-    <li><a href="#projects">Projects</a></li>
-  </ul>
-</div>
-</header>
-<section id="about" class="about-section">
-    <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content" style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-            <div class="profile-content">
-                <p>Hello! I'm <strong>Kyle Bailey</strong>, a dedicated analytics professional with over 14 years of experience in analytics, statistical modeling, and data engineering within the actuarial and financial services industries. With a recently completed Master's in Artificial Intelligence - Analytics (3.83 GPA), I bring a unique blend of technical expertise and strategic problem-solving to complex data challenges.</p>
-                <br>
-                <p>My professional journey has equipped me with extensive experience in:</p>
-                
-                <ul class="expertise-list">
-                    <li><strong>Statistical & Machine Learning Modeling</strong> - Building predictive analytics solutions for risk assessment and cost-benefit analysis</li>
-                    <li><strong>Data Pipeline Engineering</strong> - Crafting efficient ETL processes with comprehensive validation frameworks</li>
-                    <li><strong>Dashboard Development</strong> - Creating interactive visualizations that transform complex data into actionable insights</li>
-                    <li><strong>Cross-Functional Collaboration</strong> - Partnering with senior leadership to develop analytical roadmaps for high-priority business challenges</li>
-                </ul>
-                
-                <p>Throughout my career at organizations including Wells Fargo, Liberty Mutual, Kaiser Permanente, Mercer, and Milliman, I've consistently delivered analytical solutions that balance technical excellence with practical business application. I'm particularly skilled at finding the signal in the noise - translating complex data patterns into clear, strategic recommendations that drive decision-making.</p>
-                <br>
-                <p>Beyond my professional work, I'm passionate about using data for social impact, volunteering with organizations like Ryther Child Center, Northwest Harvest, and Salvation Army. I believe in the power of analytics to not only drive business success but also to address community challenges and improve lives.</p>
-                <br>
-                <p>I'm always looking for new challenges and collaborative opportunities where I can apply my analytical expertise to solve complex problems and drive meaningful results.</p>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Kyle Bailey</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+<li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
-    </div>
-</section>
+    </nav>
 
-<!-- New Technical Proficiency section -->
-<section id="skills" class="skills-section">
-    <div class="container">
-        <h2 class="section-title">Technical Proficiency</h2>
-        
-        <div class="skills-content" style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Programming & Data Engineering</h3>
-                    <p>Python, R, SQL, SAS, VBA, ETL Development, Data Wrangling</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Kyle Bailey</h1>
+            <p class="hero-title">
+                <span class="typed-text" id="typed-text"></span>
+                <span class="cursor">|</span>
+            </p>
+            <p class="hero-description">
+                Analytics professional with 14+ years of experience building predictive models, scalable pipelines, and data-driven solutions for the financial services and actuarial industries.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+            <div class="hero-social">
+                <a href="https://github.com/kwb011235" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/kylewbailey" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="mailto:baileykylew@gmail.com" class="social-link" aria-label="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01.</span>
+                About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a dedicated <span class="highlight">analytics professional</span> with over 14 years of experience in analytics, statistical modeling, data engineering, and financial modeling within the actuarial and financial services industries.
+                    </p>
+                    <p>
+                        With a <span class="highlight">Master of Science in Artificial Intelligence</span> (3.83 GPA) and <span class="highlight">Bachelor of Science in Math</span>, I bring a unique blend of technical expertise and strategic problem-solving to complex data challenges.
+                    </p>
+                    <p>
+                        Throughout my career at organizations including Wells Fargo, Liberty Mutual, Kaiser Permanente, Mercer, and Milliman, I've consistently delivered analytical solutions that balance technical excellence with practical business application.
+                    </p>
+                    <p>
+                        I'm particularly skilled at <span class="highlight">finding the signal in the noise</span> — translating complex data patterns into clear, strategic recommendations that drive decision-making — and <span class="highlight">developing efficient, scalable solutions</span>.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-number">14+</span>
+                            <span class="highlight-label">Years Experience</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-text">Enterprise Analytics & ML Solutions</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-text">Regulatory, Risk & Financial Analytics</span>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="skill-category">
-                    <h3>Statistical Methods</h3>
-                    <p>Regression Analysis, Time Series Analysis, Survival Analysis, Principal Component Analysis, Clustering, Classification, Bayesian Methods</p>
+                <div class="about-expertise">
+                    <h3>Core Competencies</h3>
+                    <ul class="expertise-list">
+                        <li>
+                            <span class="expertise-icon">📊</span>
+                            <div>
+                                <strong>Analytics & ML System Design</strong>
+                                <p>Designing end-to-end analytical systems from ingestion to executive reporting</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="expertise-icon">🔧</span>
+                            <div>
+                                <strong>Enterprise Data Pipeline Architecture</strong>
+                                <p>Owning scalable, validated data pipelines across business-critical workflows</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="expertise-icon">📈</span>
+                            <div>
+                                <strong>Decision Intelligence & Executive Analytics</strong>
+                                <p>Transforming complex data into executive-level, action-driving insights</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="expertise-icon">⚖️</span>
+                            <div>
+                                <strong>Regulatory, Risk & Compliance Analytics</strong>
+                                <p>Developing regulator-approved, auditable analytical systems in financial & healthcare environments</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="expertise-icon">🤝</span>
+                            <div>
+                                <strong>Cross-Functional Analytics Leadership</strong>
+                                <p>Partnering with actuarial, finance, engineering, and executive teams to define analytical roadmaps</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span>
+                Technical Skills
+            </h2>
+            <div class="skills-grid">
+                <!-- Data Engineering & Analytics Engineering -->
+                <div class="skill-category">
+                    <h3>Data Engineering & Analytics Engineering</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">PySpark</span>
+                        <span class="skill-tag">SAS</span>
+                        <span class="skill-tag">ETL / ELT Pipelines</span>
+                        <span class="skill-tag">dbt</span>
+                        <span class="skill-tag">Airflow</span>
+                        <span class="skill-tag">Snowflake / BigQuery / Redshift</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">GitHub Actions / CI/CD</span>
+                        <span class="skill-tag">Data Modeling (Dimensional, Star Schema)</span>
+                        <span class="skill-tag">Data Quality & Testing (Great Expectations / dbt tests)</span>
+                    </div>
+                </div>
+
+                <!-- Analytics & Applied Statistics -->
+                <div class="skill-category">
+                    <h3>Analytics & Applied Statistics</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">Regression Analysis</span>
+                        <span class="skill-tag">Time Series</span>
+                        <span class="skill-tag">Survival Analysis</span>
+                        <span class="skill-tag">PCA</span>
+                        <span class="skill-tag">Clustering</span>
+                        <span class="skill-tag">Classification</span>
+                        <span class="skill-tag">Bayesian Methods</span>
+                        <span class="skill-tag">Experimentation / A/B Testing</span>
+                        <span class="skill-tag">Causal Inference</span>
+                    </div>
+                </div>
+
+                <!-- Machine Learning & AI -->
                 <div class="skill-category">
                     <h3>Machine Learning & AI</h3>
-                    <p>Neural Networks, Deep Learning, NLP, Computer Vision, Predictive Modeling, Supervised/Unsupervised Learning</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Supervised Learning (Regression, Classification)</span>
+                        <span class="skill-tag">Unsupervised Learning (Clustering, Dimensionality Reduction)</span>
+                        <span class="skill-tag">Feature Engineering</span>
+                        <span class="skill-tag">Neural Networks</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">XGBoost</span>
+                        <span class="skill-tag">Random Forest</span>
+                        <span class="skill-tag">Predictive Modeling</span>
+                        <span class="skill-tag">Model Evaluation & Monitoring</span>
+                        <span class="skill-tag">MLOps (Deployment, Versioning, Drift)</span>
+                    </div>
                 </div>
-                
+
+                <!-- LLM Systems & Retrieval -->
+                <div class="skill-category">
+                    <h3>LLM Systems & Retrieval</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Hugging Face (Transformers, PEFT, Datasets)</span>
+                        <span class="skill-tag">LLM Fine-Tuning</span>
+                        <span class="skill-tag">RAG Pipelines</span>
+                        <span class="skill-tag">Vector Databases</span>
+                        <span class="skill-tag">LangChain / LangGraph</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">Evaluation (RAG eval, hallucination detection)</span>
+                    </div>
+                </div>
+
+                <!-- Visualization & BI -->
                 <div class="skill-category">
                     <h3>Visualization & BI</h3>
-                    <p>Tableau, PowerBI, R Shiny, Matplotlib, Seaborn</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">R Shiny</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Dashboard Design & Stakeholder Reporting</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="projects">
-    <div class="container">
-        <h2 class="section-title">My Projects</h2>
-        <div class="project">
-            <h3>PFAS Contamination Forecasting in Public Water Sources</h3>
-            <p>This project uses machine learning to forecast Per- and Polyfluoroalkyl Substances (PFAS) contamination levels across different regions of the United States. The model analyzes historical water quality data from the EPA's Unregulated Contaminant Monitoring Rule (UCMR) program to predict future PFAS concentrations.</p>
-            <p>Tools and Methods: Python (Pandas, Numpy), XGBoost, Data Cleaning and Preprocessing, Grid Search, Feature Selection and Engineering</p>
-            <a href="https://github.com/kwb011235/pfas" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project">
-            <h3>Advanced Machine Learning Modeling on Home Sale Price</h3>
-            <p>This study analyzes customer acquisition and retention patterns using advanced machine learning techniques.</p>
-            <p>Tools and Methods: R, Meta-Models, Neural Net, XGBoost, Random Forest, Elastic Net, Grid Search, Data Cleaning and Preprocessing, Hypothesis Testing.</p>
-            <a href="https://github.com/kwb011235/Advanced_Modeling_on_House_Sale_Price_Prediction" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project">
-            <h3>Comparison of Base LLM, One-Shot Fine-Tuning (OSFT), and OSFT + Chain-of-Thought on Headline Generation Using Llama 3.1B Instruct</h3>
-            <p>This project compares the performance of the Base LLM, One-Shot Fine-Tuning (OSFT), and OSFT with Chain-of-Thought prompting for generating news headlines that accurately incorporate numerical information from source articles. Based on the SemEval-2024 Task 7, this implementation fine-tunes Meta's Llama 3.1B-Instruct model to enhance numerical reasoning and headline accuracy.</p>
-            <p>Tools and Methods: Python, HuggingFace, Unsloth, and LORA</p>
-            <a href="https://github.com/kwb011235/Numeral-aware_Headline_Generation" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project">
-            <h3>Bank Marketing Case Study</h3>
-            <p>This study analyzes a dataset from a Portuguese banking institution's direct marketing campaigns to predict whether a customer will subscribe to a term deposit.</p>
-            <p>Tools and Methods: R, Logistic Regression, Linear Discriminant Analysis, Data Cleaning and Preprocessing, Feature Selection and Engineering, Hypothesis Testing</p>
-            <a href="https://github.com/kwb011235/Bank_Marketing_Case_Study" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project">
-            <h3>Direct Mail Program Case Study</h3>
-            <p>The Bookbinders Book Club (BBBC) sought to improve the eﬀicacy of its direct mail program using predictive modeling approaches.</p>
-            <p>Tools and Methods: R, Linear Regression, Logistic Regression, Support Vector Machine, Data Cleaning and Preprocessing, Feature Selection and Engineering, Hypothesis Testing</p>
-            <a href="https://github.com/kwb011235/Bookbinders_Case_Study" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project">
-            <h3>Dow Jones Index Stock Price Prediction and Risk Analysis</h3>
-            <p>This study examines stock price prediction and risk assessment for Dow Jones Index stocks using data from the first half of 2011.</p>
-            <p>Tools and Methods: R, Capital Asset Pricing Model, Linear Regression, Support Vector Machine, Decision Trees, Feature Selection and Engineering, Data Cleaning and Preprocessing</p>
-            <a href="https://github.com/kwb011235/Dow_Jones_Index_Case_Study" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project">
-            <h3>Customer Acquisition and Retention Patterns Case Study</h3>
-            <p>This study analyzes customer acquisition and retention patterns using advanced machine learning techniques.</p>
-            <p>Tools and Methods: R, Random Forest, Decision Trees, Logistic Regression, Grid Search, Data Cleaning and Preprocessing, Feature Selection and Engineering</p>
-            <a href="https://github.com/kwb011235/Customer_Retention_Case_Study" target="_blank">View on GitHub</a>
-        </div>
-        <!-- Add more project divs as needed -->
-    </div>
-</section>
-<footer>
-<!-- Empty for now -->
-</footer>
-<!-- Back to top button -->
-<button id="back-to-top" title="Back to top">↑</button>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span>
+                Featured Projects
+            </h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/kwb011235/pfas" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">PFAS Contamination Forecasting</h3>
+                    <p class="project-description">
+                        Machine learning model to forecast Per- and Polyfluoroalkyl Substances (PFAS) contamination levels across U.S. regions using EPA's UCMR program data.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>XGBoost</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                    </div>
+                </div>
 
-<!-- JavaScript for back to top button functionality -->
-<script>
-  // Get the button
-  const backToTopButton = document.getElementById("back-to-top");
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/kwb011235/Advanced_Modeling_on_House_Sale_Price_Prediction" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Home Sale Price Prediction</h3>
+                    <p class="project-description">
+                        Advanced machine learning modeling using meta-models, neural networks, and ensemble methods to predict home sale prices with high accuracy.
+                    </p>
+                    <div class="project-tech">
+                        <span>R</span>
+                        <span>Neural Net</span>
+                        <span>XGBoost</span>
+                        <span>Random Forest</span>
+                    </div>
+                </div>
 
-  // When the user scrolls down 300px from the top of the document, show the button
-  window.onscroll = function() {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-      backToTopButton.style.display = "block";
-    } else {
-      backToTopButton.style.display = "none";
-    }
-  };
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/kwb011235/Numeral-aware_Headline_Generation" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">LLM Fine-Tuning Comparison</h3>
+                    <p class="project-description">
+                        Comparing Base LLM, One-Shot Fine-Tuning, and Chain-of-Thought prompting for headline generation using Llama 3.1B based on SemEval-2024 Task 7.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>HuggingFace</span>
+                        <span>Unsloth</span>
+                        <span>LoRA</span>
+                    </div>
+                </div>
 
-  // When the user clicks on the button, scroll to the top of the document
-  backToTopButton.addEventListener("click", function() {
-    // For smooth scrolling
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  });
-</script>
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                <line x1="1" y1="10" x2="23" y2="10"></line>
+                            </svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/kwb011235/Bank_Marketing_Case_Study" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Bank Marketing Case Study</h3>
+                    <p class="project-description">
+                        Predictive analysis of Portuguese bank marketing campaigns to forecast customer subscription to term deposits using classification models.
+                    </p>
+                    <div class="project-tech">
+                        <span>R</span>
+                        <span>Logistic Regression</span>
+                        <span>LDA</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/kwb011235/Dow_Jones_Index_Case_Study" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Stock Price Prediction & Risk Analysis</h3>
+                    <p class="project-description">
+                        Stock price prediction and risk assessment for Dow Jones Index using CAPM, regression models, and machine learning techniques.
+                    </p>
+                    <div class="project-tech">
+                        <span>R</span>
+                        <span>CAPM</span>
+                        <span>SVM</span>
+                        <span>Decision Trees</span>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/kwb011235/Customer_Retention_Case_Study" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Customer Retention Analysis</h3>
+                    <p class="project-description">
+                        Analysis of customer acquisition and retention patterns using ensemble machine learning methods to identify key factors driving customer behavior.
+                    </p>
+                    <div class="project-tech">
+                        <span>R</span>
+                        <span>Random Forest</span>
+                        <span>Decision Trees</span>
+                        <span>Grid Search</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all-projects">
+                <a href="https://github.com/kwb011235?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    View All Projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04.</span>
+                Get In Touch
+            </h2>
+            <div class="contact-content">
+                <p class="contact-intro">
+                    I'm always open to discussing new opportunities, interesting projects, or ways to collaborate. Whether you have a question or just want to say hello, feel free to reach out!
+                </p>
+                <div class="contact-methods">
+                    <a href="mailto:baileykylew@gmail.com" class="contact-card">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Email</h3>
+                        <p>baileykylew@gmail.com</p>
+                    </a>
+                    <a href="https://github.com/kwb011235" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <h3>GitHub</h3>
+                        <p>github.com/kwb011235</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kylewbailey" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>Connect with me</p>
+                    </a>
+                </div>
+                <a href="mailto:baileykylew@gmail.com" class="btn btn-primary btn-large">
+                    Say Hello
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed & Built by Kyle Bailey</p>
+            <p class="footer-year">&copy; <span id="current-year"></span> All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
